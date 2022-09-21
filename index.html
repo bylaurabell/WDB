@@ -27,8 +27,10 @@
         This is a <em>paragraph</em> on my practice page. Pretty <strong>cool</strong> huh? 
     </p>
     <hr>
+    <h2>Images</h2>
     <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="Generic Coding Picture from Unsplash" height="400" width="300">
     <hr>
+    <h2>Tables</h2>
     <table>
         <thead>
             <tr>
@@ -50,6 +52,111 @@
             </tr>
         </tbody>
     </table>
+    <hr>
+    <form>
+        <label for="username">Enter Username:</label>
+        <input id="username" type="text" placeholder="username" name="username" >
+        
+        <label for="password">Password:</label>
+        <input id ="password" type="password" placeholder="Password" name="password">
+        
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color">
+        
+        <label for="number">Number:</label>
+        <input type="number" placeholder="Enter a Number" min="0" max="1000" step="100">
+        
+        <button type="button">Submit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <label for="googlesearch">Search Google:</label>
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h2>More types of inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I Agree</label>
+        <button>Submit</button>
+    
+    <p>
+        <input type="radio" id="option_1" name="options" Value="option_1">
+        <label for="option_1">Option 1</label>
+        <input type="radio" id="option_2" name="options" Value="option_2">
+        <label for="option_2">Option 2</label>
+        <input type="radio" id="option_3" name="options" Value="option_3">
+        <label for="option_3">Option 3</label>
+        <button>Submit</button>
+    </p>
+    <p>
+        <label for="meal">Select an Entree</label>
+        <select name="meal" id="meal">
+            <option value="">Select an option:</option>
+            <option value="fish">Fish</option>
+            <option value="veg">Vegetarian</option>
+            <option value="steak">Steak</option>
+        </select>
+    </p>
+    
+    <label for="cheese">Amount of Cheese:</label>
+    <input type="range" id="cheese" min="1" max="100" step="10" name="cheese_level">
+    <button>Submit</button>
+</form>
+<p>
+    <label for="requests">Any Special Requests?</label>
+    <br>
+    <textarea name="text-area" id="requests" cols="30" rows="10" placeholder="I would like...">
+    </textarea>
+</p>
+<h2>Validations </h2>
+<form action="/dummy">
+    <label for="first">Enter First Name</label>
+    <input type="text" name="first" id="first" required>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" minlength="5" maxlength="20">
+    <button>Submit</button>
+</form>
+<p>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="url">URL:</label>
+    <input type="url" name="url" id="url">
+</p>
+<hr>
+<h1>Race Registration!</h1>
+<form action="">
+<label for="first">First Name</label>
+<input type="text" id="first" name="firstname" required>
+<label for="last">Last Name</label>
+<input type="text" id="last" name="lastname" required>
+<br>
+Select a Race:
+<br>
+<input type="radio" id="funrun" name="races" value="funrun">
+<label for="funrun">Fun Run 5K</label>
+<br>
+<input type="radio" id="half" name="races" value="half">
+<label for="half">Half Marathon</label>
+<br>
+<input type="radio" id="full" name="races" value="full">
+<label for="full">Full Marathon</label>
+<br>
+<label for="email">Email</label>
+<input type="email" name="email" id="email" required>
+<label for="password">Password</label>
+<input type="password" name="password" id="password" required>
+<br>
+<label for="ages">Select Age Group</label>
+<select name="ages" id="ages">
+   <option value="kids">Under 18</option>
+   <option value="ya">18-30</option>
+   <option value="adults">30-50</option>
+   <option value="seniors">50+</option>
+</select>
+<br>
+<button>Register!</button>
+</form>
+
 </main>
 
 </body>
