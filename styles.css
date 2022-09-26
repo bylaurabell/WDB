@@ -1,5 +1,5 @@
-html{
-    font-family:Arial, Helvetica, sans-serif;
+body{
+    margin: 0;
 }
 h1{
    font-family:Arial, Helvetica, sans-serif;
@@ -12,14 +12,124 @@ h1{
 }
 button{
     color: black;
-    background-color: papayawhip;
+    background-color: white;
     font-weight: bold;
 }
 p{
     line-height: 1.5;
     letter-spacing: 2px;
+    color: green;
 }
 /*PX are the most commonly used absolute unit
 -not recommended for responsive websites*/
-
-
+#table{
+    color: black;
+    background-color: pink;
+    border: 1px solid black;
+}
+.radio{
+    color: black;
+    background-color: pink;
+    border: 1px solid black;
+}
+#id{
+    color: azure;
+    background-color: darkblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+}
+.class{
+    color: blanchedalmond;
+    background-color: brown;
+    text-align: center;
+}
+header h2{
+    color: darkblue;
+    text-transform: uppercase;
+}
+div h3{
+    color: pink;
+    background-color: darkblue;
+}
+button:hover{
+    color:blue;
+    background-color:aqua;
+}
+button:active{
+    transform: scale(1.5);
+}
+div button:hover{
+    color: red;
+    background-color: black;
+}
+div button:active{
+    transform:none;
+}
+.post:nth-of-type(2n){
+    background-color: lightgray;
+}
+.post::first-letter{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.lorem::first-line{
+    color: red;
+}
+.lorem::selection{
+    background-color: yellow;
+}
+/*Specifity: The more specific selector wins. When more than 
+one style is applied to the same element, the more specific selector will be applied.
+ID>CLASS>ELEMENT--specificity Inline Styles are more specific but not recommended...(!important is most specific)*/
+.inherit{
+    color: purple;
+}.lorem-2{
+    color: inherit;
+}
+.box-model{
+border-width: thick;
+border-style: solid;
+border-color: black;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border: 2px solid black;
+    border-left-color: black;
+    border-right-color: black;
+    border-radius: 5% 25%;
+    margin: 50px;
+}
+.padding-box{
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    margin: 50px;
+}
+.padding{
+    padding: 0 25px;
+}
+#display{
+    background-color: brown;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black;
+}
+span{
+    background-color: blue;
+    display: block;
+    border: 2px solid black;
+    width: 200px;
+    margin: 10px;
+}
+section{
+    height:500px;
+    width: 500px;
+    background-color: gray;
+}
+.practice-box{
+    height:50%;
+    width:50%;
+    background-color: pink;
+}
