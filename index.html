@@ -1,224 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Web Developer Bootcamp Practice Page</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">About Me</a>
-                </li>
-                <li>
-                    <a href="http://www.udemy.com">Course Link</a>
-                </li>
-            </ul>
-        </nav>
-    <h1>The Web Developer Bootcamp Practice</h1>
-    <h2>Laura Bell</h2>
-    <h3>Front-End Developer</h3>
-</header>
-<main>
-    <p>
-        This is a <em>paragraph</em> on my practice page. Pretty <strong>cool</strong> huh? 
-    </p>
-    <hr>
-    <h2>Images</h2>
-    <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="Generic Coding Picture from Unsplash" height="400" width="300">
-    <hr>
-    <h2>Tables</h2>
-    <table id="table">
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="http://www.udemy.com">Course Link</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>The Web Developer Bootcamp Practice</h1>
+      <h2>Laura Bell</h2>
+      <h3>Front-End Developer</h3>
+    </header>
+    <main>
+      <p>
+        This is a <em>paragraph</em> on my practice page. Pretty
+        <strong>cool</strong> huh?
+      </p>
+      <hr />
+      <h2>Images</h2>
+      <img
+        src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
+        alt="Generic Coding Picture from Unsplash"
+        height="400"
+        width="300"
+      />
+      <hr />
+      <h2>Tables</h2>
+      <table id="table">
         <thead>
-            <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
-            </tr>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-                <td>Data 3</td>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-                <td>Data 3</td>
-            </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+          </tr>
         </tbody>
-    </table>
-    <hr>
-    <form>
+      </table>
+      <hr />
+      <form>
         <label for="username">Enter Username:</label>
-        <input id="username" type="text" placeholder="username" name="username" >
-        
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+
         <label for="password">Password:</label>
-        <input id ="password" type="password" placeholder="Password" name="password">
-        
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          name="password"
+        />
+
         <label for="color">Color:</label>
-        <input type="color" id="color" name="color">
-        
+        <input type="color" id="color" name="color" />
+
         <label for="number">Number:</label>
-        <input type="number" placeholder="Enter a Number" min="0" max="1000" step="100">
-        
+        <input
+          type="number"
+          placeholder="Enter a Number"
+          min="0"
+          max="1000"
+          step="100"
+        />
+
         <button type="button">Submit</button>
-    </form>
-    <form action="https://www.google.com/search">
+      </form>
+      <form action="https://www.google.com/search">
         <label for="googlesearch">Search Google:</label>
-        <input type="text" name="q">
+        <input type="text" name="q" />
         <button>Search Google</button>
-    </form>
-    <h2>More types of inputs</h2>
-    <form action="/birds">
-        <input type="checkbox" name="agree_tos" id="agree">
+      </form>
+      <h2>More types of inputs</h2>
+      <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" />
         <label for="agree">I Agree</label>
         <button>Submit</button>
-    
-    <p class="radio">
-        <input type="radio" id="option_1" name="options" Value="option_1">
-        <label for="option_1">Option 1</label>
-        <input type="radio" id="option_2" name="options" Value="option_2">
-        <label for="option_2">Option 2</label>
-        <input type="radio" id="option_3" name="options" Value="option_3">
-        <label for="option_3">Option 3</label>
-        <button>Submit</button>
-    </p>
-    <p>
-        <label for="meal">Select an Entree</label>
-        <select name="meal" id="meal">
+
+        <p class="radio">
+          <input type="radio" id="option_1" name="options" value="option_1" />
+          <label for="option_1">Option 1</label>
+          <input type="radio" id="option_2" name="options" value="option_2" />
+          <label for="option_2">Option 2</label>
+          <input type="radio" id="option_3" name="options" value="option_3" />
+          <label for="option_3">Option 3</label>
+          <button>Submit</button>
+        </p>
+        <p>
+          <label for="meal">Select an Entree</label>
+          <select name="meal" id="meal">
             <option value="">Select an option:</option>
             <option value="fish">Fish</option>
             <option value="veg">Vegetarian</option>
             <option value="steak">Steak</option>
-        </select>
-    </p>
-    
-    <label for="cheese">Amount of Cheese:</label>
-    <input type="range" id="cheese" min="1" max="100" step="10" name="cheese_level">
-    <button>Submit</button>
-</form>
-<p>
-    <label for="requests">Any Special Requests?</label>
-    <br>
-    <textarea name="text-area" id="requests" cols="30" rows="10" placeholder="I would like...">
-    </textarea>
-</p>
-<h2>Validations </h2>
-<form action="/dummy">
-    <label for="first">Enter First Name</label>
-    <input type="text" name="first" id="first" required>
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username" minlength="5" maxlength="20">
-    <button>Submit</button>
-</form>
-<p>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required>
-    <label for="url">URL:</label>
-    <input type="url" name="url" id="url">
-</p>
-<hr>
-<h1>Race Registration!</h1>
-<form action="">
-<label for="first">First Name</label>
-<input type="text" id="first" name="firstname" required>
-<label for="last">Last Name</label>
-<input type="text" id="last" name="lastname" required>
-<br>
-Select a Race:
-<br>
-<input type="radio" id="funrun" name="races" value="funrun">
-<label for="funrun">Fun Run 5K</label>
-<br>
-<input type="radio" id="half" name="races" value="half">
-<label for="half">Half Marathon</label>
-<br>
-<input type="radio" id="full" name="races" value="full">
-<label for="full">Full Marathon</label>
-<br>
-<label for="email">Email</label>
-<input type="email" name="email" id="email" required>
-<label for="password">Password</label>
-<input type="password" name="password" id="password" required>
-<br>
-<label for="ages">Select Age Group</label>
-<select name="ages" id="ages">
-   <option value="kids">Under 18</option>
-   <option value="ya">18-30</option>
-   <option value="adults">30-50</option>
-   <option value="seniors">50+</option>
-</select>
-<br>
-<button>Register!</button>
-</form>
-<hr>
-<h2>CSS Selectors</h2>
-<div id="id">This is styled using an id selector</div>
-<div class="class">This is styled using a class selector</div>
-<hr>
-<h2>Descendent Selector:</h2>
-<div>
-    <h3>H3 in a div</h3>
-</div>
-    <h3>H3 not in a div</h3>
-<hr>
-<h2>Pseudo Classes and Pseudo Elements</h2>
-:hover
-<button>Hover</button>
-<div>
-    :active
-    <button>Button in a Div</button>
-</div>
-<h3>:nth-of-type(2n)</h3>
-<p class="post">post one</p>
-<p class="post">post two</p>
-<p class="post">post three</p>
-<p class="post">post four</p>
-<p class="post">post five</p>
-<p class="post">post six</p>
-<h2>::first-line and ::selection</h2>
-<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat consequatur qui, laboriosam assumenda voluptas illo dolor necessitatibus eos odio numquam hic labore sit cupiditate velit, corrupti iure quidem obcaecati vero!
-Commodi excepturi adipisci et! Quidem perferendis omnis voluptatem mollitia incidunt aut labore est ipsum corrupti, nihil harum deserunt velit assumenda id! Nostrum, aperiam nobis. Veritatis reprehenderit omnis rerum possimus mollitia.
-</p>
-<hr>
-<div class="inherit">
-<h2>Inherit</h2>
-<p class="lorem-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam assumenda architecto consectetur pariatur, dignissimos voluptatibus. Nam hic similique minus explicabo deserunt, reiciendis, cum, praesentium dolore tempore dolor omnis impedit nisi?</p>
-</div>
-<hr>
-<h2>The Box Model</h2>
-<div class="box-model">
-    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio necessitatibus, repellendus nobis incidunt architecto eveniet quo harum assumenda illo reiciendis cum recusandae at! Tempore optio obcaecati odio voluptate? Sapiente, voluptas.</div>
-    <div class="box">Maiores, eius consectetur unde accusantium minus consequatur harum aliquid accusamus exercitationem quae, perspiciatis veritatis facere aut quo in tempora sunt quis. Est doloribus eum officia. Totam aliquid exercitationem dolorem saepe.</div>
-    <div class="box">Numquam nesciunt voluptates quaerat explicabo perspiciatis! Odio aperiam quas dignissimos asperiores error debitis, quis laudantium esse recusandae totam possimus doloremque animi dolorem optio expedita qui quaerat mollitia dolore eligendi maiores.</div>
-    <div class="box">In dolorum deleniti nemo, accusantium reiciendis exercitationem animi quo itaque praesentium nostrum rem eveniet enim sint placeat. Sint cupiditate quae similique debitis neque ex pariatur, veritatis sapiente, ea, inventore accusamus.</div>
-    <div class="box">Laborum fuga recusandae nostrum possimus, eligendi, obcaecati, error optio quia praesentium voluptate consectetur sint accusantium. Laborum, obcaecati. Ea molestias sit laborum cupiditate ab, explicabo velit neque cumque sunt fugit corporis?</div>
-</div>
-<h2>Padding and Margin:</h2> 
-<br>
-<div class="padding-box">
-<button class="padding">Padding</button>
-</div>
-<hr>
-<h2>Display Property</h2>
-<h1 id="display">I am H1</h1>
-<h1 id="display">I am also H1</h1>
-<span>Span</span>
-<span>Also span</span>
-<hr>
-<h2>CSS Units</h2>
-<section>
-    <div class="practice-box">
-        
-    </div>
-</section>
-</main>
+          </select>
+        </p>
 
-</body>
+        <label for="cheese">Amount of Cheese:</label>
+        <input
+          type="range"
+          id="cheese"
+          min="1"
+          max="100"
+          step="10"
+          name="cheese_level"
+        />
+        <button>Submit</button>
+      </form>
+      <p>
+        <label for="requests">Any Special Requests?</label>
+        <br />
+        <textarea
+          name="text-area"
+          id="requests"
+          cols="30"
+          rows="10"
+          placeholder="I would like..."
+        >
+        </textarea>
+      </p>
+      <h2>Validations</h2>
+      <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required />
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          minlength="5"
+          maxlength="20"
+        />
+        <button>Submit</button>
+      </form>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url" />
+      </p>
+      <hr />
+      <h1>Race Registration!</h1>
+      <form action="">
+        <label for="first">First Name</label>
+        <input type="text" id="first" name="firstname" required />
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="lastname" required />
+        <br />
+        Select a Race:
+        <br />
+        <input type="radio" id="funrun" name="races" value="funrun" />
+        <label for="funrun">Fun Run 5K</label>
+        <br />
+        <input type="radio" id="half" name="races" value="half" />
+        <label for="half">Half Marathon</label>
+        <br />
+        <input type="radio" id="full" name="races" value="full" />
+        <label for="full">Full Marathon</label>
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <label for="ages">Select Age Group</label>
+        <select name="ages" id="ages">
+          <option value="kids">Under 18</option>
+          <option value="ya">18-30</option>
+          <option value="adults">30-50</option>
+          <option value="seniors">50+</option>
+        </select>
+        <br />
+        <button>Register!</button>
+      </form>
+      <hr />
+      <h2>CSS Selectors</h2>
+      <div id="id">This is styled using an id selector</div>
+      <div class="class">This is styled using a class selector</div>
+      <hr />
+      <h2>Descendent Selector:</h2>
+      <div>
+        <h3>H3 in a div</h3>
+      </div>
+      <h3>H3 not in a div</h3>
+      <hr />
+      <h2>Pseudo Classes and Pseudo Elements</h2>
+      :hover
+      <button>Hover</button>
+      <div>
+        :active
+        <button>Button in a Div</button>
+      </div>
+      <h3>:nth-of-type(2n)</h3>
+      <p class="post">post one</p>
+      <p class="post">post two</p>
+      <p class="post">post three</p>
+      <p class="post">post four</p>
+      <p class="post">post five</p>
+      <p class="post">post six</p>
+      <h2>::first-line and ::selection</h2>
+      <p class="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+        consequatur qui, laboriosam assumenda voluptas illo dolor necessitatibus
+        eos odio numquam hic labore sit cupiditate velit, corrupti iure quidem
+        obcaecati vero! Commodi excepturi adipisci et! Quidem perferendis omnis
+        voluptatem mollitia incidunt aut labore est ipsum corrupti, nihil harum
+        deserunt velit assumenda id! Nostrum, aperiam nobis. Veritatis
+        reprehenderit omnis rerum possimus mollitia.
+      </p>
+      <hr />
+      <div class="inherit">
+        <h2>Inherit</h2>
+        <p class="lorem-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+          assumenda architecto consectetur pariatur, dignissimos voluptatibus.
+          Nam hic similique minus explicabo deserunt, reiciendis, cum,
+          praesentium dolore tempore dolor omnis impedit nisi?
+        </p>
+      </div>
+      <hr />
+      <h2>The Box Model</h2>
+      <div class="box-model">
+        <div class="box">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+          necessitatibus, repellendus nobis incidunt architecto eveniet quo
+          harum assumenda illo reiciendis cum recusandae at! Tempore optio
+          obcaecati odio voluptate? Sapiente, voluptas.
+        </div>
+        <div class="box">
+          Maiores, eius consectetur unde accusantium minus consequatur harum
+          aliquid accusamus exercitationem quae, perspiciatis veritatis facere
+          aut quo in tempora sunt quis. Est doloribus eum officia. Totam aliquid
+          exercitationem dolorem saepe.
+        </div>
+        <div class="box">
+          Numquam nesciunt voluptates quaerat explicabo perspiciatis! Odio
+          aperiam quas dignissimos asperiores error debitis, quis laudantium
+          esse recusandae totam possimus doloremque animi dolorem optio expedita
+          qui quaerat mollitia dolore eligendi maiores.
+        </div>
+        <div class="box">
+          In dolorum deleniti nemo, accusantium reiciendis exercitationem animi
+          quo itaque praesentium nostrum rem eveniet enim sint placeat. Sint
+          cupiditate quae similique debitis neque ex pariatur, veritatis
+          sapiente, ea, inventore accusamus.
+        </div>
+        <div class="box">
+          Laborum fuga recusandae nostrum possimus, eligendi, obcaecati, error
+          optio quia praesentium voluptate consectetur sint accusantium.
+          Laborum, obcaecati. Ea molestias sit laborum cupiditate ab, explicabo
+          velit neque cumque sunt fugit corporis?
+        </div>
+      </div>
+      <h2>Padding and Margin:</h2>
+      <br />
+      <div class="padding-box">
+        <button class="padding">Padding</button>
+      </div>
+      <hr />
+      <h2>Display Property</h2>
+      <h1 id="display">I am H1 (inline-block)</h1>
+      <h1 id="display">I am also H1 (inline-block)</h1>
+      <span>Span (block)</span>
+      <span>Also span (block)</span>
+      <hr />
+      <h2>CSS Units: Percentages</h2>
+      <section class="percentages">
+        <div class="practice-box"></div>
+      </section>
+      <hr />
+      <h2>Alpha Channel and Opacity</h2>
+      <div id="alpha">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+        temporibus cum facere! Temporibus libero, laudantium natus consequuntur
+        eveniet molestiae incidunt dolores possimus consectetur vel perspiciatis
+        error voluptatem nemo laborum numquam!
+      </div>
+      <div id="opacity">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        modi, odit at optio architecto molestias illo laboriosam ea consequatur
+        adipisci et assumenda magnam dolorum ex dolore atque repellat maiores.
+        Iure!
+      </div>
+      <hr />
+      <h2>Position</h2>
+      <button class="position-btn">
+        <a href="./Position/position.html">Click Me</a>
+      </button>
+      <hr />
+      <h2>Transitions</h2>
+      <p>Property Name | Duration | Timing Function | Delay</p>
+      <div class="circle"></div>
+      <section class="transition-section">
+        <div class="transition-div"></div>
+        <div class="transition-div"></div>
+        <div class="transition-div"></div>
+      </section>
+      <hr />
+      <h2>Transform</h2>
+      <button class="transform-btn">
+        <a href="./Transform/transform.html">Go to Transform Page</a>
+      </button>
+      <hr />
+      <div class="btn-codealong">
+        <button class="fancy-btn">Hover Me</button>
+      </div>
+      <hr>
+      <h2>Backgrounds</h2>
+      <button><a href="./Background/background.html">GO SEE BACKGROUND STUFF</a></button>
+      <hr>
+      <h2>Photo Blog Code-Along</h2>
+      <button><a href="./Photo_Blog/blog.html">Go to Photo Blog</a></button>
+    </main>
+  </body>
 </html>
