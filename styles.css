@@ -17,6 +17,12 @@ button{
     color: black;
     background-color: white;
     font-weight: bold;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 2em;
+    border: 1px solid black;
+
+
 }
 p{
     line-height: 1.5;
@@ -56,7 +62,7 @@ div h3{
 }
 button:hover{
     color:blue;
-    background-color:aqua;
+    background-color:pink;
 }
 button:active{
     transform: scale(1.5);
@@ -157,7 +163,7 @@ span{
     transition: 1s 1s;
 }
 .circle:hover{
-    background-color: cyan;
+    background-color: pink;
     border-radius: 50%;
 }
 .transition-section .transition-div{
