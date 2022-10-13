@@ -2,6 +2,8 @@
 
 html{
     font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 body{
     margin: 0;
@@ -23,6 +25,7 @@ button{
     font-size: 2em;
     border-radius: 2em;
     border: 1px solid black;
+
 }
 p{
     line-height: 1.5;
@@ -61,11 +64,11 @@ div h3{
     background-color: darkblue;
 }
 button:hover{
-    color:blue;
+    color: black;
     background-color:pink;
 }
 button:active{
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 div button:hover{
     color: red;
@@ -199,4 +202,7 @@ span{
     box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
     transform: translateY(-0.25em);
     cursor: pointer;
+}
+a {
+    color: black;
 }
